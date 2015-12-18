@@ -2,12 +2,12 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_reffiliate'
-  s.version     = '2.4.1'
-  s.author      = 'Alejandro AR'
-  s.email       = 'abarcadabra@gmail.com'
+  s.version     = '3.0.0'
+  s.author      = ['Augusto Zangrandi', 'Alejandro AR']
+  s.email       = 'augustozangrandi@gmail.com'
   s.summary     = 'Spree Affiliate and Referrals extension'
   s.description = 'Configurable affiliates and referrals features for Spree'
-  s.homepage    = 'https://github.com/kinduff/spree_reffiliate'
+  s.homepage    = 'https://github.com/zangrandi/spree_reffiliate'
   s.license     = 'New-BSD'
 
   s.required_ruby_version = '>= 1.9.3'
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.test_files   = s.files.grep(%r{^spec/})
   s.require_path = 'lib'
 
-  s.add_dependency 'spree_core', '~> 2.3'
+  s.add_dependency 'spree_core', '3.0.0'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
