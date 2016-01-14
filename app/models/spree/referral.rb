@@ -5,6 +5,8 @@ module Spree
 
     validates_presence_of :user_id, :code
 
+    validates :code, uniqueness: true
+
     before_validation :attach_code, on: :create
 
     def referred_users
