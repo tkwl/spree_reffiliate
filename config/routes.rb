@@ -1,6 +1,6 @@
 Spree::Core::Engine.routes.draw do
-  get 'r/:code' => 'reffiliate#referral', as: 'referral'
-  get 'a/:path' => 'reffiliate#affiliate', as: 'affiliate'
+  get 'sites/:code' => 'reffiliate#referral', as: 'referral'
+  get 'affiliates/:path' => 'reffiliate#affiliate', as: 'affiliate'
 
   namespace :admin do
     resources :affiliates

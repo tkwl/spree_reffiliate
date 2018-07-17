@@ -20,14 +20,20 @@
       <%= render :partial => 'form', :locals => { :f => f } %>
 
       <div data-hook="admin_affiliate_edit_form_button">
-        <%= render :partial => 'spree/admin/shared/edit_resource_links', :locals => { :collection_url => admin_affiliates_url } %>
+        <div class="col-md-12">
+          <%= render :partial => 'spree/admin/shared/edit_resource_links', :locals => { :collection_url => admin_affiliates_url } %>
+        </div>
       </div>
     <% end %>
   </div>
 </fieldset>
 <fieldset data-hook="admin_affiliate_edit_stats" class="alpha twelve columns">
   <legend><%= Spree.t(:statistics) %></legend>
-  <table>
+  <table class="table">
+    <colgroup>
+      <col style="width: 30%">
+      <col style="width: 70%">
+    </colgroup>
     <tbody>
       <tr>
         <th>Affiliate hyperlink</th>
