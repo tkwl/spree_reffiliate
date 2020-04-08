@@ -16,7 +16,8 @@ Gem::Specification.new do |s|
   s.test_files   = s.files.grep(%r{^spec/})
   s.require_path = 'lib'
 
-  s.add_dependency 'spree_core', '~> 3.0.5'
+  spree_version = '>= 3.1.0', '< 5.0'
+  s.add_dependency 'spree_core', spree_version
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
